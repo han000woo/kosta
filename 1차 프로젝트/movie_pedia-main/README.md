@@ -34,7 +34,6 @@ KOSTA - 1차 팀 프로젝트
 # 🤼 팀 멤버 소개
 | **항목**    | **재원**                                                                                       | **선우**                                                                                       | **정아**                                                                                       | **혁주**                                                                                       |
 |:----------|:----------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
-| **사진**   | ![김재원](https://github.com/user-attachments/assets/c4d78a14-2eff-4b21-b37f-f293addbd65e)                              | ![한선우](https://avatars.githubusercontent.com/u/120350053?v=4)    | ![최정아](https://github.com/user-attachments/assets/20aab45b-c93b-4166-9c77-acb1288f47fe)    | ![석혁주](https://github.com/user-attachments/assets/bb81db9e-db1d-4c15-a78c-531344dcc4e7)    |
 | **역할**   | BackEnd(팀장)                                                                                             | BackEnd(팀원)                                                                                             | FrontEnd(팀원)                                                                                             | FrontEnd(팀원)                                                                                             |
 | **GitHub** | [김재원 GitHub](https://github.com/UsoD98)                                                   | [한선우 GitHub](https://github.com/hamster0410)                                                   | [최정아 GitHub](https://github.com/berryicebox)                                                   | [석혁주 GitHub](https://github.com/cocoball0)                                                   |
 | **주 작업** | 1. 전체 프로젝트 총괄 <br>2. 회원 CRUD 기능 구현 <br>3. 게시글 평점, 코멘트 구현 <br>4. 소셜 기능 구현 <br>5. 영화 API 설계 <br> 6. ERD 설계 <br> 7. 발표 | 1. 주간, 개봉예정작 API 처리 <br> 2. 위시리스트 기능 구현 <br> 3. 화면 전환 처리 <br> 4. 비밀번호 찾기 기능 구현  <br> 5. 영화 정보 검색기능 구현 <br> 6. PPT 제작| 1. 메인 홈페이지 구현 <br> 2. 로그인 페이지 구현 <br> 3. 영화 detail 페이지 구현 <br> 4. 사용자 개인 페이지 구현 <br> 5. html & css 관리 | 1. 메인 홈페이지 구현 <br> 2. 로그인 페이지 구현 <br> 3. 영화 detail 페이지 구현 <br> 4. 사용자 개인 페이지 구현 <br> 5. html & css 관리 |
@@ -61,13 +60,13 @@ KOSTA - 1차 팀 프로젝트
 <br/>
 
 
-# <img src="https://github.com/user-attachments/assets/8add337f-87f1-43c4-bb30-a0f9f9e19b1c" width="40" height="40" alt="Image description"> 사용된 기술 스택
+# 사용된 기술 스택
+<img width="1257" height="701" alt="image" src="https://github.com/user-attachments/assets/b8554895-1509-491f-9ddd-e6aada6ce258" />
 
-![제목을-입력해주세요_-001 (2)](https://github.com/user-attachments/assets/11c71b28-11a3-44a5-a469-2127088d6e41)
 <br/>
 
 
-# <img src="https://github.com/user-attachments/assets/d300fa7e-a678-4422-bb9d-55bdf79e3bc5" width="35" height="35" alt="Image description"> 프로젝트 구조
+# 프로젝트 구조
 
 ```bash
 ├─main
@@ -106,54 +105,50 @@ KOSTA - 1차 팀 프로젝트
 
 
 # 🧱  ERD 설계
+<img width="1035" height="538" alt="image" src="https://github.com/user-attachments/assets/db194d67-5495-4bc9-9530-fc92230cf929" />
 
-![image (9)](https://github.com/user-attachments/assets/6961ca77-8a23-4761-a31e-d43dfc4831c0)
 <br/>
 
 
 # 🔥 동작 화면
 ### 홈페이지
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bb6ae3be-5c0c-4427-b7ab-c5c0f632cdb7" style="display: block; margin: auto; border: 2px solid #000;">
+    <img width="1826" height="812" alt="image" src="https://github.com/user-attachments/assets/9dfa0b8a-a890-4ace-b773-858d7669697f" />
+
 </p>
 <br/>
 
-### 화면전환
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/f97c734e-6bd2-4915-9bc3-2d097e22748a" style="display: block; margin: auto; border: 2px solid #000;">
-</p>
-<br/>
 
 ### 회원기능
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d8036d6b-4634-484b-b956-1ec146f1506f" style="display: block; margin: auto; border: 2px solid #000; width: 200px;">
-  <img src="https://github.com/user-attachments/assets/349e2623-b590-4a9f-a83b-2de555d6afc8" style="display: block; margin: auto; border: 2px solid #000; width: 200px;">
-  <img src="https://github.com/user-attachments/assets/90449483-69f4-4c42-8c72-0b25c5c7b1ea" style="display: block; margin: auto; border: 2px solid #000; width: 200px;">
+  <img width="1813" height="650" alt="image" src="https://github.com/user-attachments/assets/8929d72b-0abd-4bda-9693-536f76f8e1d5" />
+  <img width="1710" height="781" alt="image" src="https://github.com/user-attachments/assets/d76afbed-fa2f-4704-9232-ab1f134b1b27" />
+  <img width="1720" height="514" alt="image" src="https://github.com/user-attachments/assets/a93a3826-cd1f-4d66-966d-a8067cc74605" />
 </p>
 
 <br/>
 
 ### 평점 및 찜하기
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b3018a40-4826-484b-9f13-bddc7709b58a" style="display: block; margin: auto; border: 2px solid #000;">
+<img width="930" height="630" alt="image" src="https://github.com/user-attachments/assets/cb238e05-0716-427a-be6c-a19db9c284bf" />
 </p>
 <br/>
 
 ### 코멘트
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6c7fcf19-b3e8-4050-be3e-f2b425a89762" style="display: block; margin: auto; border: 2px solid #000;">
+  <img width="1826" height="465" alt="image" src="https://github.com/user-attachments/assets/dbcef2e4-c40b-4bc2-aa71-3280c70b2902" />
 </p>
 <br/>
 
 ### 마이페이지
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9ae7db08-1ae7-4997-a11b-1b8e58595943" style="display: block; margin: auto; border: 2px solid #000;">
+<img width="1851" height="439" alt="image" src="https://github.com/user-attachments/assets/6f376292-1ca6-48cb-8f86-ef5f50e6d0ce" />
 </p>
 <br/>
 
 ### 영화 검색
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e5d6a09a-9a36-48cb-ac8b-6e2b6c37aa11" style="display: block; margin: auto; border: 2px solid #000;">
+<img width="1683" height="577" alt="image" src="https://github.com/user-attachments/assets/92012c87-485d-4036-a9b3-d2119a0612b5" />
 </p>
 <br/>
 
