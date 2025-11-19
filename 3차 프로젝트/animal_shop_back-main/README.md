@@ -74,207 +74,206 @@
 # 프로젝트 구조
 
 ```agda
-Front End (React)
-
-├── App.jsx
-├── App.test.js
-├── index.css
-├── index.jsx
-├── assets
-│   ├── fonts
-│   ├── img
-│   └── styles
-├── components
-│   ├── additional
-│   │   ├── adopt
-│   │   ├── calc
-│   │   └── wiki
-│   ├── board
-│   ├── chatting
-│   ├── comment
-│   ├── common
-│   ├── layout
-│   ├── map
-│   ├── member
-│   │   ├── myPage
-│   │   │   └── items
-│   │   ├── password
-│   │   └── pet
-│   │       └── register
-│   └── shop
-│       ├── admin
-│       │   └── notice
-│       ├── order
-│       │   ├── delivery
-│       ├── product
-│       │   ├── QnA
-│       │   ├── detail
-│       │   ├── option
-│       │   └── review
-│       └── seller
-│           ├── itemList
-│           ├── itemRegister
-│           └── sellerQna
-├── pages
-│   ├── additional
-│   ├── board
-│   ├── chatting
-│   ├── map
-│   ├── member
-│   └── shop
-│       ├── admin
-│       ├── order
-│       ├── product
-│       └── seller
-└── utils
-
+📁 Front End (React)
+├── 📘 App.jsx (.jsx)
+├── 📘 App.test.js (.js)
+├── 📄 index.css (.css)
+├── 📘 index.jsx (.jsx)
+├── 📁 assets
+│   ├── 📁 fonts
+│   ├── 📁 img
+│   └── 📁 styles
+├── 📁 components
+│   ├── 📁 additional
+│   │   ├── 📘 adopt.jsx
+│   │   ├── 📘 calc.jsx
+│   │   └── 📘 wiki.jsx
+│   ├── 📘 board.jsx
+│   ├── 📘 chatting.jsx
+│   ├── 📘 comment.jsx
+│   ├── 📘 common.jsx
+│   ├── 📘 layout.jsx
+│   ├── 📘 map.jsx
+│   ├── 📁 member
+│   │   ├── 📁 myPage
+│   │   │   └── 📘 items.jsx
+│   │   ├── 📘 password.jsx
+│   │   └── 📁 pet
+│   │       └── 📘 register.jsx
+│   └── 📁 shop
+│       ├── 📁 admin
+│       │   └── 📘 notice.jsx
+│       ├── 📁 order
+│       │   ├── 📘 delivery.jsx
+│       ├── 📁 product
+│       │   ├── 📘 QnA.jsx
+│       │   ├── 📘 detail.jsx
+│       │   ├── 📘 option.jsx
+│       │   └── 📘 review.jsx
+│       └── 📁 seller
+│           ├── 📘 itemList.jsx
+│           ├── 📘 itemRegister.jsx
+│           └── 📘 sellerQna.jsx
+├── 📁 pages
+│   ├── 📘 additional.jsx
+│   ├── 📘 board.jsx
+│   ├── 📘 chatting.jsx
+│   ├── 📘 map.jsx
+│   ├── 📘 member.jsx
+│   └── 📁 shop
+│       ├── 📘 admin.jsx
+│       ├── 📘 order.jsx
+│       ├── 📘 product.jsx
+│       └── 📘 seller.jsx
+└── 📁 utils
 
 ----------------------------------------------------------------------------------------
 
 Back End (Spring Boot)
 
-project/
-├── community                 //애니멀핑 커뮤니티 도메인
-│   ├── comment               //댓글 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── heart_comment         //댓글 좋아요 CRUD
-│   │   ├── controller
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── heart_post            //게시글 좋아요 CRUD
-│   │   ├── controller
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── member                //회원 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   └── post                   //게시글 CRUD
-│       ├── controller
-│       ├── dto
-│       ├── entity
-│       ├── repository
-│       └── service
-├── global                    // 전체 프로젝트에서 공통적으로 쓰이는 서비스 모음
-│   ├── admin                 // 관리자 기능 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── config                // 내부 보안 설정, 소켓 통신 
-│   ├── controller            // 파일 입출력 Controller
-│   ├── dto    
-│   ├── init                  // 프로젝트 실행 시 초기 세팅(디렉토리 생성 등)
-│   ├── pay                   // 결제 구현 CRUD
-│   │   ├── config
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── security              // spring security, jwt token provider
-│   └── service
-├── shop                      // 애니멀핑 쇼핑몰 도메인
-│   ├── cart                  // 장바구니 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── cart_item             // 장바구니 상품 CRUD
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── delivery              // 배송 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── item                  // 상품 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── item_comment          // 상품 리뷰 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── item_comment_like     // 상품 리뷰 좋아요 CRUD
-│   │   ├── controller
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── main                  // 메인페이지 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   └── service
-│   ├── order                 // 주문 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── order_item             // 주문 상품 CRUD
-│   │   ├── dto
-│   │   ├── entity
-│   │   └── repository
-│   ├── pet                    // 반려동물 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   ├── point                  // 상품 결제 포인트 CRUD
-│   │   ├── controller
-│   │   ├── dto
-│   │   ├── entity
-│   │   ├── repository
-│   │   └── service
-│   └── seller                 // 판매자 기능 CRUD
-│       └── controller
-└── tools                      // 유틸리티(지도 검색, 유기동물, 동물 백과, 펫 계산기)
-    ├── abandoned_animal       // 유기동물 CRUD
-    │   ├── controller
-    │   ├── dto
-    │   ├── entity
-    │   ├── repository
-    │   └── service
-    ├── calculate              // 계산기 CRUD
-    │   ├── controller
-    │   ├── dto
-    │   └── service
-    ├── chat                   // 채팅 CRUD
-    │   ├── controller
-    │   ├── dto
-    │   ├── entity
-    │   ├── repository
-    │   └── service
-    ├── map_service            // 지도 CRUD
-    │   ├── controller
-    │   ├── dto
-    │   ├── entity
-    │   ├── repository
-    │   └── service
-    └── wiki_service            // 동물 백과 CRUD 
-        ├── controller
-        ├── dto
-        ├── entity
-        ├── repository
-        └── service
+📁 project
+├── 📁 community
+│   ├── 📁 comment
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 heart_comment
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 heart_post
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 member
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   └── 📁 post
+│       ├── ☕ controller.java
+│       ├── ☕ dto.java
+│       ├── ☕ entity.java
+│       ├── ☕ repository.java
+│       └── ☕ service.java
+├── 📁 global
+│   ├── 📁 admin
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 config
+│   ├── 📁 controller
+│   ├── 📁 dto
+│   ├── 📁 init
+│   ├── 📁 pay
+│   │   ├── 📁 config
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 security
+│   └── 📁 service
+├── 📁 shop
+│   ├── 📁 cart
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 cart_item
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 delivery
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 item
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 item_comment
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 item_comment_like
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 main
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   └── ☕ service.java
+│   ├── 📁 order
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 order_item
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   └── ☕ repository.java
+│   ├── 📁 pet
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   ├── 📁 point
+│   │   ├── ☕ controller.java
+│   │   ├── ☕ dto.java
+│   │   ├── ☕ entity.java
+│   │   ├── ☕ repository.java
+│   │   └── ☕ service.java
+│   └── 📁 seller
+│       └── ☕ controller.java
+└── 📁 tools
+    ├── 📁 abandoned_animal
+    │   ├── ☕ controller.java
+    │   ├── ☕ dto.java
+    │   ├── ☕ entity.java
+    │   ├── ☕ repository.java
+    │   └── ☕ service.java
+    ├── 📁 calculate
+    │   ├── ☕ controller.java
+    │   ├── ☕ dto.java
+    │   └── ☕ service.java
+    ├── 📁 chat
+    │   ├── ☕ controller.java
+    │   ├── ☕ dto.java
+    │   ├── ☕ entity.java
+    │   ├── ☕ repository.java
+    │   └── ☕ service.java
+    ├── 📁 map_service
+    │   ├── ☕ controller.java
+    │   ├── ☕ dto.java
+    │   ├── ☕ entity.java
+    │   ├── ☕ repository.java
+    │   └── ☕ service.java
+    └── 📁 wiki_service
+        ├── ☕ controller.java
+        ├── ☕ dto.java
+        ├── ☕ entity.java
+        ├── ☕ repository.java
+        └── ☕ service.java
+
 
 ```
 <br/>
